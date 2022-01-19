@@ -23,6 +23,7 @@ function TodoForm(props) {
     setInput('');
   };
 
+
   return (
     <form onSubmit={handleSubmit} className='todo-form'>
       {props.edit ? (
@@ -41,6 +42,7 @@ function TodoForm(props) {
         </>
       ) : (
         <>
+        {/* placeholder and buttons */}
           <input
             placeholder='E.G. Finish my portfolio..'
             value={input}

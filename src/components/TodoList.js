@@ -40,7 +40,7 @@ function TodoList() {
     setTodos(updatedTodos);
   };
 
-  // Title
+  // Title, loads todo.js
   return (
     <>
       <h1>What do I need to do today??</h1>
