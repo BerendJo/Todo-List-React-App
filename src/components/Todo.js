@@ -18,10 +18,12 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
     });
   };
 
+  // loads edied todoform
   if (edit.id) {
     return <TodoForm edit={edit} onSubmit={submitUpdate} />;
   }
 
+  // adding remove and edit button to item
   return todos.map((todo, index) => (
     <div
       className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
